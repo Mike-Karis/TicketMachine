@@ -14,5 +14,17 @@ namespace TicketMachine
         public string watching { get; set; }
         public string newticket{get; set; }
 
+        public Ticket()
+        {
+            // TicketID;
+            // summary;
+            // status;
+            // priority;
+            // submitter;
+            // assigned;
+            // watching;
+
+        }
+
     }
 }
