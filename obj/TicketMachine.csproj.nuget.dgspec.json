@@ -1,31 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\bitstudent\\OneDrive - Waukesha County Technical College\\WCTC Fall Semester 1\\DotnetDb\\TicketMachine\\TicketMachine.csproj": {}
+    "C:\\Users\\mikej\\OneDrive - Waukesha County Technical College\\WCTC Fall Semester 1\\DotnetDb\\TicketMachine\\TicketMachine.csproj": {}
   },
   "projects": {
-    "C:\\Users\\bitstudent\\OneDrive - Waukesha County Technical College\\WCTC Fall Semester 1\\DotnetDb\\TicketMachine\\TicketMachine.csproj": {
+    "C:\\Users\\mikej\\OneDrive - Waukesha County Technical College\\WCTC Fall Semester 1\\DotnetDb\\TicketMachine\\TicketMachine.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\bitstudent\\OneDrive - Waukesha County Technical College\\WCTC Fall Semester 1\\DotnetDb\\TicketMachine\\TicketMachine.csproj",
+        "projectUniqueName": "C:\\Users\\mikej\\OneDrive - Waukesha County Technical College\\WCTC Fall Semester 1\\DotnetDb\\TicketMachine\\TicketMachine.csproj",
         "projectName": "TicketMachine",
-        "projectPath": "C:\\Users\\bitstudent\\OneDrive - Waukesha County Technical College\\WCTC Fall Semester 1\\DotnetDb\\TicketMachine\\TicketMachine.csproj",
-        "packagesPath": "C:\\Users\\bitstudent\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\bitstudent\\OneDrive - Waukesha County Technical College\\WCTC Fall Semester 1\\DotnetDb\\TicketMachine\\obj\\",
+        "projectPath": "C:\\Users\\mikej\\OneDrive - Waukesha County Technical College\\WCTC Fall Semester 1\\DotnetDb\\TicketMachine\\TicketMachine.csproj",
+        "packagesPath": "C:\\Users\\mikej\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\mikej\\OneDrive - Waukesha County Technical College\\WCTC Fall Semester 1\\DotnetDb\\TicketMachine\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
-        ],
         "configFilePaths": [
-          "C:\\Users\\bitstudent\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\mikej\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
