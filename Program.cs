@@ -23,29 +23,31 @@ namespace TicketMachine
                 }
                 else if (choice == "2")
                 {
-                    
-                        Console.WriteLine("Enter TicketID.");
-                        string TicketID = Console.ReadLine();
+                    Ticket ticket = new Ticket
+                        {
+                        Console.WriteLine("Enter TicketID."),
+                        TicketID = Console.ReadLine(),
 
-                        Console.WriteLine("Enter summary.");
-                        string summary = Console.ReadLine();
+                        Console.WriteLine("Enter summary."),
+                        summary = Console.ReadLine(),
 
-                        Console.WriteLine("Enter status.");
-                        string status = Console.ReadLine();
+                        Console.WriteLine("Enter status."),
+                        status = Console.ReadLine(),
                         
-                        Console.WriteLine("Enter priority.");
-                        string priority = Console.ReadLine();
+                        Console.WriteLine("Enter priority."),
+                        priority = Console.ReadLine(),
 
-                        Console.WriteLine("Enter submitter.");
-                        string submitter = Console.ReadLine();
+                        Console.WriteLine("Enter submitter."),
+                        submitter = Console.ReadLine(),
 
-                        Console.WriteLine("Enter assigned empoyees.");
-                        string assigned = Console.ReadLine();
+                        Console.WriteLine("Enter assigned empoyees."),
+                        assigned = Console.ReadLine(),
 
-                        Console.WriteLine("Enter employees watching.");
-                        string watching = Console.ReadLine();
-                        string newticket = TicketID+", "+summary+", "+status+", "+priority+", "+submitter+", "+assigned+", "+watching;
-                        
+                        Console.WriteLine("Enter employees watching."),
+                        watching = Console.ReadLine(),
+
+                        newticket = TicketID+", "+summary+", "+status+", "+priority+", "+submitter+", "+assigned+", "+watching,
+                        };
                         using (StreamWriter sw = File.AppendText(file)){
                             sw.WriteLine();
                             sw.WriteLine(newticket);
