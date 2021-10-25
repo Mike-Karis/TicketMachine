@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace TicketMachine
 {
-    public class Ticket
+    public abstract class Ticket
     {
         public string TicketID { get; set; }
         public string summary { get; set; }
@@ -26,5 +26,18 @@ namespace TicketMachine
 
         }
 
+    }
+    public class BugTicket:Ticket{
+        public string severity{get; set;}
+    }
+    public class Enhancements:Ticket{
+        public string software{get; set;}
+        public string cost{get; set;}
+        public string reason{get; set;}
+        public string estimate{get; set;}
+    }
+    public class Task:Ticket{
+        public string projectName{get; set;}
+        public string dueDate{get; set;}
     }
 }
