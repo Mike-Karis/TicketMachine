@@ -18,8 +18,12 @@ namespace TicketMachine
 
                 if (choice == "1")
                 {
-                        string readtext= File.ReadAllText("Tickets.csv");
-                        Console.WriteLine(readtext);
+                        string readtext1= File.ReadAllText("Tickets.csv");
+                        Console.WriteLine(readtext1);
+                        string readtext2= File.ReadAllText("Enhancements.csv");
+                        Console.WriteLine(readtext2);
+                        string readtext3= File.ReadAllText("Task.csv");
+                        Console.WriteLine(readtext3);
                 }
                 else if (choice == "2")
                 {
@@ -53,9 +57,9 @@ namespace TicketMachine
                         Console.WriteLine("2) Enhancement Ticket.");
                         Console.WriteLine("3) Task Ticket.");
                         Console.WriteLine("Enter any other key to exit.");
-                        choice = Console.ReadLine();
+                        string choice2 = Console.ReadLine();
 
-                        if (choice == "1")
+                        if (choice2 == "1")
                         {
                             Console.WriteLine("Enter severity.");
                             string severityTemp = Console.ReadLine();
@@ -76,8 +80,9 @@ namespace TicketMachine
                                     sw.WriteLine();
                                     sw.WriteLine(newticketTemp);
                                 }
+                                break;
                         }
-                        else if( choice == "2"){
+                        else if( choice2 == "2"){
                             Console.WriteLine("Enter software.");
                             string softwareTemp = Console.ReadLine();
                             Console.WriteLine("Enter cost.");
@@ -106,13 +111,14 @@ namespace TicketMachine
                                     sw.WriteLine();
                                     sw.WriteLine(newticketTemp);
                                 }
+                                break;
                         }
-                        else if(choice == "3"){
+                        else if(choice2 == "3"){
                             Console.WriteLine("Enter project name.");
                             string projectNameTemp = Console.ReadLine();
                             Console.WriteLine("Enter due date.");
                             string dueDateTemp = Console.ReadLine();
-                            newticketTemp = newticketTemp+", "+projectNameTemp+". "+dueDateTemp;
+                            newticketTemp = newticketTemp+", "+projectNameTemp+", "+dueDateTemp;
                             Ticket Task = new Task
                                 {
                                 TicketID = TicketIDTemp,
@@ -130,49 +136,9 @@ namespace TicketMachine
                                     sw.WriteLine();
                                     sw.WriteLine(newticketTemp);
                                 }
-                        }
-                        using (StreamWriter sw = File.AppendText(file)){
-                            sw.WriteLine();
-                            sw.WriteLine(newticketTemp);
+                                break;
                         }
                     } while (choice == "1" || choice == "2" || choice =="3");
-
-                    // Ticket Bug = new BugTicket
-                    //     {
-                    //     TicketID = TicketIDTemp,
-                    //     summary = summaryTemp,
-                    //     status = statusTemp, 
-                    //     priority = priorityTemp,
-                    //     submitter = submitterTemp,
-                    //     assigned = assignedTemp,
-                    //     watching = watchingTemp,
-                    //     newticket = newticketTemp,
-                    //     };
-
-                    // Ticket Enhancements = new Enhancements
-                    //     {
-                    //     TicketID = TicketIDTemp,
-                    //     summary = summaryTemp,
-                    //     status = statusTemp, 
-                    //     priority = priorityTemp,
-                    //     submitter = submitterTemp,
-                    //     assigned = assignedTemp,
-                    //     watching = watchingTemp,
-                    //     newticket = newticketTemp,
-                    //     };
-
-                    // Ticket Task = new Task
-                    //     {
-                    //     TicketID = TicketIDTemp,
-                    //     summary = summaryTemp,
-                    //     status = statusTemp, 
-                    //     priority = priorityTemp,
-                    //     submitter = submitterTemp,
-                    //     assigned = assignedTemp,
-                    //     watching = watchingTemp,
-                    //     newticket = newticketTemp,
-                    //     };
-
                 }
             } while (choice == "1" || choice == "2");
         }
